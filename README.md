@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎭 Facial Recognition System
 
 > A complete facial recognition pipeline built with **OpenCV** and the **LBPH algorithm** — supporting dataset collection, preprocessing, model training, evaluation, and real-time webcam recognition.
@@ -208,3 +209,7 @@ recognize_from_image("path/to/photo.jpg")
 
 **Monika** — B.Tech AI/ML, Chennai  
 HCL GUVI AIML Program | IITM Pravartak Certification Track
+=======
+# facial-recognition-system
+Facial Recognition project
+>>>>>>> f796835874404509df74b8dd51c3ff8148ceff95
