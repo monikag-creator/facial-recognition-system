@@ -14,43 +14,19 @@ This project implements a facial recognition system from scratch using classical
 Why LBPH?
 | Feature | LBPH | Deep Learning |
 |---|---|---|
+
 | Training data needed | ~30–100 images | Thousands |
+
 | Runs without GPU |  Yes |  Often no |
+
 | Speed | Very fast | Moderate–slow |
+
 | Accuracy (small dataset) | Good | Overkill / poor |
+
 | Interpretability | High | Low (black box) |
 
 LBPH is ideal for academic projects and small datasets — exactly our use case.
 ---
-
- Project Structure
-facial-recognition/
-│
-├── face_recognition_system.py   # Main pipeline (train, evaluate, real-time)
-├── dataset_setup.py             # Helper to build dataset from existing photos
-├── requirements.txt
-│
-├── dataset/
-│   ├── train/
-│   │   ├── Person1/             # 40–100 grayscale face images
-│   │   └── Person2/
-│   └── test/
-│       ├── Person1/             # ~10–20 held-out images
-│       └── Person2/
-│
-├── models/
-│   ├── lbph_model.yml           # Trained model weights
-│   └── labels.json              # {0: "Person1", 1: "Person2", ...}
-│
-├── utils/
-│   └── visualize.py             # Charts, sample grid, confusion matrix
-│
-└── results/
-    ├── evaluation_results.json  # Accuracy / FP / FN stats
-    ├── accuracy_chart.png
-    ├── confusion_matrix.png
-    └── sample_grid.png
-```
 
  Approach Explained
 
@@ -133,15 +109,21 @@ recognize_from_image("path/to/photo.jpg")
  Performance Metrics Explained
 | Metric | Formula | Meaning |
 |---|---|---|
+
 | Accuracy | correct / total × 100 | Overall recognition rate |
+
 | False Positive | Wrong person accepted | System says "Alice" but it's "Bob" |
+
 | False Negative | Real person rejected | System says "Unknown" but it's Alice |
 
 Expected Results (well-lit, frontal faces)
 | Condition | Typical Accuracy |
 |---|---|
+
 | Good lighting, frontal, 50+ images/person | 85–95% |
+
 | Mixed lighting, partial angles | 65–80% |
+
 | Very few images (<20/person) | 50–70% |
 
 Challenges & Improvements
