@@ -125,6 +125,7 @@ Expected Results (well-lit, frontal faces)
 | Mixed lighting, partial angles | 65–80% |
 
 | Very few images (<20/person) | 50–70% |
+---
 
 Challenges & Improvements
 **Challenges faced:**
