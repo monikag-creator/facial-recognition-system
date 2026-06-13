@@ -1,0 +1,4 @@
+dataset/train/*
+dataset/test/*
+!dataset/train/.gitkeep
+!dataset/test/.gitkeep
