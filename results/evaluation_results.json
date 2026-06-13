@@ -1,0 +1,16 @@
+{
+  "total": 10,
+  "correct": 10,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "per_class": {
+    "Monika": {
+      "total": 10,
+      "correct": 10,
+      "fp": 0,
+      "fn": 0,
+      "accuracy": 100.0
+    }
+  },
+  "accuracy": 100.0
+}

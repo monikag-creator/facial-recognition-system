@@ -426,13 +426,13 @@ if __name__ == "__main__":
     # ── Change this block to control what runs ──────────────────────
     #
     # Option A: Full train + eval pipeline
-    run_full_pipeline()
+    # run_full_pipeline()
     #
     # Option B: Collect new face data from webcam
-    # collect_faces_from_webcam("YourName", num_samples=60)
+    # collect_faces_from_webcam("Monika", num_samples=60)
     #
     # Option C: Real-time webcam recognition
-    # run_realtime_recognition()
+    run_realtime_recognition()
     #
     # Option D: Recognize faces in a single image
     # recognize_from_image("path/to/photo.jpg")
